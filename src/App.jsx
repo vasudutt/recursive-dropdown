@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Dropdown from './components/Dropdown';
+import Folders from './components/Folders';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -56,6 +57,6 @@ export default function App() {
   }
 
   return (
-    <div className="m-4">{isSuccess && <Dropdown data={data} />}</div>
+    <div className="m-4">{isSuccess && <Folders data={data} />}</div>
   );
 }
